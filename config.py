@@ -138,7 +138,8 @@ EMOTION_DEVICE = "cuda"  # Set to "cpu" if no GPU available
 # Confidence filtering thresholds
 CONFIDENCE_THRESHOLD = 0.5       # Minimum confidence to keep a sample
 ENTROPY_THRESHOLD = 1.5          # Maximum entropy (lower = more certain)
-HAPPINESS_CAP = 5000             # Cap the maximum number of Happiness samples to balance the dataset
+HAPPINESS_CAP = 1000             # Cap the maximum number of Happiness samples to balance the dataset
+
 
 
 # Batch processing

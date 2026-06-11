@@ -245,10 +245,11 @@ public class EmotionInference : MonoBehaviour
 
         // Make the data readable on the CPU
         var cpuOutput = outputTensor.ReadbackAndClone();
+        float[] outputArray = cpuOutput.DownloadToArray();
 
         for (int i = 0; i < NumEmotions; i++)
         {
-            _outputBuffer[i] = cpuOutput[i];
+            _outputBuffer[i] = outputArray[i];
         }
 
         cpuOutput.Dispose();

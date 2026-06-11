@@ -1,0 +1,36 @@
+# Generated data, model checkpoints, large files
+data/*
+!data/processed/
+data/processed/*
+!data/processed/selected_features.json
+!data/processed/normalization_params.json
+
+models/checkpoints/
+models/evaluation/
+models/mediapipe/*.task
+# Exclude exported models except the final ONNX model and metadata
+models/exported/*
+!models/exported/emotion_model.onnx
+!models/exported/emotion_model.json
+
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

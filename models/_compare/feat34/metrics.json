@@ -1,0 +1,65 @@
+{
+  "accuracy": 0.610955,
+  "macro_f1": 0.52888,
+  "weighted_f1": 0.587269,
+  "teacher_student_agreement": 0.610955,
+  "per_class_kl_divergence": {
+    "Anger": 0.701002,
+    "Disgust": 0.784194,
+    "Fear": 0.917756,
+    "Happiness": 1.15525,
+    "Neutral": 0.731843,
+    "Sadness": 1.012761,
+    "Surprise": 0.729337
+  },
+  "per_class_metrics": {
+    "Anger": {
+      "precision": 0.47191,
+      "recall": 0.777778,
+      "f1-score": 0.587413,
+      "support": 54.0
+    },
+    "Disgust": {
+      "precision": 0.389831,
+      "recall": 0.605263,
+      "f1-score": 0.474227,
+      "support": 38.0
+    },
+    "Fear": {
+      "precision": 0.418605,
+      "recall": 0.216867,
+      "f1-score": 0.285714,
+      "support": 83.0
+    },
+    "Happiness": {
+      "precision": 0.658537,
+      "recall": 0.72,
+      "f1-score": 0.687898,
+      "support": 150.0
+    },
+    "Neutral": {
+      "precision": 0.727749,
+      "recall": 0.709184,
+      "f1-score": 0.718346,
+      "support": 196.0
+    },
+    "Sadness": {
+      "precision": 0.611111,
+      "recall": 0.148649,
+      "f1-score": 0.23913,
+      "support": 74.0
+    },
+    "Surprise": {
+      "precision": 0.635135,
+      "recall": 0.803419,
+      "f1-score": 0.709434,
+      "support": 117.0
+    }
+  },
+  "quality_gates": {
+    "macro_f1_pass": false,
+    "agreement_pass": false
+  },
+  "checkpoint_epoch": 33,
+  "best_val_macro_f1": 0.500004
+}
